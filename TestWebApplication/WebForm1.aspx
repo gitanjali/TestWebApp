@@ -11,7 +11,8 @@
     <div>
     hi......
 
-      Welcome to CC.Net....... ..............
+      Welcome to CC.Net.......
+        Integratin with Gits
     </div>
     </form>
 </body>
