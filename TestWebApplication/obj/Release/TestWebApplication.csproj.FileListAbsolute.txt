@@ -1,3 +1,0 @@
-D:\Hudson\Build\TestWebApplication.dll
-D:\Gitanjali\VS2012\TestWebApplication\TestWebApplication\obj\Release\TestWebApplication.csprojResolveAssemblyReference.cache
-D:\Gitanjali\VS2012\TestWebApplication\TestWebApplication\obj\Release\TestWebApplication.dll
