@@ -11,7 +11,7 @@
     <div>
     hi......
 
-      Welcome to gitHub
+      Welcome ..............
     </div>
     </form>
 </body>
