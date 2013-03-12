@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 11.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="11.0">
+ <Targets>
+  <Target Name="D:\Gitanjali\VS2012\TestWebApplication\TestWebApplication\bin\TestWebApplication.dll">
+   <Modules>
+    <Module Name="testwebapplication.dll">
+     <Namespaces>
+      <Namespace Name="TestWebApplication">
+       <Types>
+        <Type Name="Class1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Finalize()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RemoveEmptyFinalizers" Category="Microsoft.Performance" CheckId="CA1821" Status="Active" Created="2013-03-12 11:27:46Z" FixCategory="NonBreaking" BreaksBuild="True">
+             <Issue Certainty="75" Level="Warning" Path="d:\Gitanjali\VS2012\TestWebApplication\TestWebApplication" File="WebForm1.aspx.cs" Line="36">'Class1' implements a finalizer that only calls conditionally emitted methods or the base type finalizer. Remove the finalizer or ensure that it is only conditionally compiled into the assembly. If this violation occurs against a finalizer that is entirely wrapped in a conditionally-emitted block of code, suppress this message.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="WebForm1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="TestForNaNCorrectly" Category="Microsoft.Usage" CheckId="CA2242" Status="Active" Created="2013-03-12 11:27:46Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="d:\Gitanjali\VS2012\TestWebApplication\TestWebApplication" File="WebForm1.aspx.cs" Line="19">Because direct comparisons to 'Single.NaN' or 'Double.NaN' will always return true for inequality and false for all other comparisons, replace the comparison in 'WebForm1.Page_Load(object, EventArgs)' with a call to 'Single.IsNaN' or 'Double.IsNaN'.</Issue>
+             <Issue Certainty="95" Level="CriticalError" Path="d:\Gitanjali\VS2012\TestWebApplication\TestWebApplication" File="WebForm1.aspx.cs" Line="20">Because direct comparisons to 'Single.NaN' or 'Double.NaN' will always return true for inequality and false for all other comparisons, replace the comparison in 'WebForm1.Page_Load(object, EventArgs)' with a call to 'Single.IsNaN' or 'Double.IsNaN'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="RemoveEmptyFinalizers" Category="Microsoft.Performance" CheckId="CA1821" BreaksBuild="True">
+   <Name>Remove empty finalizers</Name>
+   <Description>Finalizers should be avoided where possible, to avoid the additional performance overhead involved in tracking object lifetime.</Description>
+   <Resolution Name="Default">{0} implements a finalizer that only calls conditionally emitted methods or the base type finalizer. Remove the finalizer or ensure that it is only conditionally compiled into the assembly. If this violation occurs against a finalizer that is entirely wrapped in a conditionally-emitted block of code, suppress this message.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264476(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="11.0.0.0" />
+  </Rule>
+  <Rule TypeName="TestForNaNCorrectly" Category="Microsoft.Usage" CheckId="CA2242">
+   <Name>Test for NaN correctly</Name>
+   <Description>Direct comparisons against 'Single.NaN' or 'Double.NaN' (not a number) always return true for inequality and false for all other comparisons; use 'Single.IsNaN' or 'Double.IsNaN' to check if a floating point value is NaN.</Description>
+   <Resolution Name="Default">Because direct comparisons to 'Single.NaN' or 'Double.NaN' will always return true for inequality and false for all other comparisons, replace the comparison in {0} with a call to 'Single.IsNaN' or 'Double.IsNaN'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264491(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="usagerules.dll" Version="11.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
