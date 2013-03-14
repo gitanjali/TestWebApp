@@ -17,6 +17,9 @@
          Welcome to CC.Net.......
         Integratin with Gits
 
+         Welcome to CC.Net.......
+        Integratin with Gits
+
     </div>
     </form>
 </body>
