@@ -17,12 +17,15 @@
          Welcome to CC.Net.......
         Integratin with Gits
 
+<<<<<<< HEAD
          Welcome to CC.Net.......
         Integratin with Gits
 
         Welcome to CC.Net.......
         Integratin with Gits
 
+=======
+>>>>>>> parent of 89f3a6a... updated
     </div>
     </form>
 </body>
