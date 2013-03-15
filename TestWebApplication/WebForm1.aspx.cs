@@ -9,16 +9,16 @@ namespace TestWebApplication
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        static double zero;
+        //static double zero;
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
             try
             {
-                Response.Write(0 / zero == double.NaN);
-                Response.Write(0 / zero != double.NaN);
-                Response.Write(double.IsNaN(0 / zero));
+                //Response.Write(0 / zero == double.NaN);
+                //Response.Write(0 / zero != double.NaN);
+                //Response.Write(double.IsNaN(0 / zero));
 
             }
             catch (Exception ex)
@@ -29,13 +29,13 @@ namespace TestWebApplication
 
     }
 
-    public class Class1
-    {
-        // Violation occurs because the finalizer is empty.
-        ~Class1()
-        {
-        }
-    }
+    //public class Class1
+    //{
+    //    // Violation occurs because the finalizer is empty.
+    //    ~Class1()
+    //    {
+    //    }
+    //}
 
 
 }
