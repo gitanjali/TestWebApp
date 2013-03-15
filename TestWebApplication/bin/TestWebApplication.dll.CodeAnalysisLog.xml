@@ -12,7 +12,7 @@
          <Members>
           <Member Name="#Finalize()" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="RemoveEmptyFinalizers" Category="Microsoft.Performance" CheckId="CA1821" Status="Active" Created="2013-03-12 12:31:04Z" FixCategory="NonBreaking">
+            <Message TypeName="RemoveEmptyFinalizers" Category="Microsoft.Performance" CheckId="CA1821" Status="Active" Created="2013-03-15 05:01:21Z" FixCategory="NonBreaking">
              <Issue Certainty="75" Level="Warning" Path="d:\Gitanjali\VS2012\TestWebApplication\TestWebApplication" File="WebForm1.aspx.cs" Line="36">'Class1' implements a finalizer that only calls conditionally emitted methods or the base type finalizer. Remove the finalizer or ensure that it is only conditionally compiled into the assembly. If this violation occurs against a finalizer that is entirely wrapped in a conditionally-emitted block of code, suppress this message.</Issue>
             </Message>
            </Messages>
@@ -23,7 +23,7 @@
          <Members>
           <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="TestForNaNCorrectly" Category="Microsoft.Usage" CheckId="CA2242" Status="Active" Created="2013-03-12 12:31:04Z" FixCategory="NonBreaking">
+            <Message TypeName="TestForNaNCorrectly" Category="Microsoft.Usage" CheckId="CA2242" Status="Active" Created="2013-03-15 05:01:21Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="d:\Gitanjali\VS2012\TestWebApplication\TestWebApplication" File="WebForm1.aspx.cs" Line="19">Because direct comparisons to 'Single.NaN' or 'Double.NaN' will always return true for inequality and false for all other comparisons, replace the comparison in 'WebForm1.Page_Load(object, EventArgs)' with a call to 'Single.IsNaN' or 'Double.IsNaN'.</Issue>
              <Issue Certainty="95" Level="CriticalError" Path="d:\Gitanjali\VS2012\TestWebApplication\TestWebApplication" File="WebForm1.aspx.cs" Line="20">Because direct comparisons to 'Single.NaN' or 'Double.NaN' will always return true for inequality and false for all other comparisons, replace the comparison in 'WebForm1.Page_Load(object, EventArgs)' with a call to 'Single.IsNaN' or 'Double.IsNaN'.</Issue>
             </Message>
